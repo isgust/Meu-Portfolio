@@ -49,6 +49,10 @@ body {
     color: var(--cor-texto);
 }
 
+.cabecalho a:hover {
+    color: var(--cor-primaria);
+}
+
 .cabecalho ul {
     width: 700px;
     background-color: var(--cor-fundo-cabecalho);
