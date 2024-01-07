@@ -5,17 +5,16 @@
 :root {
     --cor-primaria: #2F274C; /* Azul escuro */
     --cor-secundaria: #9272C2; /* Roxo */
-    --cor-destaque: #e74c3c; /* Vermelho */
-    --cor-texto: #ffffff; /* Cor do texto principal */
     --cor-fundo: #F5F4FA; /* Cinza claro */
     --cor-fundo-cabecalho: #8e44ad; /* Roxo escuro */
-    --cor-fundo-secao: #410d0d; /* Branco */
     --cor-fundo-projeto: #F5F4FA; /* Cor fraca para o fundo dos projetos */
     --cor-botao: #2F274C; /* Azul */
     --cor-botao-hover: #9272C2; /* Azul mais escuro */
+    --cor-texto: #ffffff; /* Cor do texto principal */
     --cor-texto-rodape: #fff; /* Texto do rodapé em branco */
     --cor-texto-card: #000000;
 }
+
 
 /* Reset de Estilos Padrão */
 body {
@@ -32,10 +31,19 @@ body {
 
 /* Cabeçalho */
 .cabecalho {
+    position: fixed;
     background-color: var(--cor-fundo-cabecalho);
     display: flex;
     justify-content: space-evenly;
     box-shadow: 0px 0px 3px black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--cor-fundo-cabecalho);
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 3px black;
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos na página */
 }
 
 .cabecalho .logo {
@@ -77,7 +85,7 @@ article {
     flex-direction: column;
     align-items: center;
     height: 1500px;
-    margin-top: 10px;
+    margin-top: 70px;
 }
 
 section {
@@ -193,5 +201,5 @@ footer a {
 
 .hab{
     position: relative;
-    left: 2%;
+    left: ;
 }
